@@ -75,14 +75,40 @@
             <!--<input type="tel"placeholder="TELEFONE*"><br>-->
             <input type="tel" id="telefone" placeholder="TELEFONE*" maxlength="15" oninput="formatarTelefone(this)"><br>
 
-            <input type="text" placeholder="COMO DESEJA SER CONTATADO"><br>
+            
+            <div class="sobre-voce">
+                
+              
+             <select id="contato" onchange="mostrarComentario()">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="solicitacao">Solicitação</option>
+                  
+                     <!--  <select id= "contato" onchange="mostrarComentario()">
+                 <option value="" disabled selected>como deseja ser contatado</option>
+                    <option value="">Elogio</option>
+                    <option value="">Reclamação</option>
+                    <option value="">Solicitação</option>-->
+                </select>
 
-            <select name="" id="">
-                <option value="" disabled selected>como deseja ser contactado</option>
-                <option value="">Elogio</option>
-                <option value="">Reclamação</option>
-                <option value="">Solicitação</option>
-            </select>
+            </div>    
+
+            
+
+                <div= class="caixa de dialogo"
+
+                 id="caixa-comentario" style="margin-top: 20px;">
+
+                 </div>
+ 
+
+
+
+
+            
+
+
             <br>
             <button class="botão azul">Enviar</button>
         </div>
@@ -101,6 +127,50 @@
         <div>
             <img src="assets/ford-96.png" alt="">
         </div>
+
+
+        <script>
+            function mostrarComentario() {
+              const select = document.getElementById('contato'); // pega o select
+              const valor = select.value; // pega o valor da opção escolhida
+              const caixa = document.getElementById('caixa-comentario'); // div onde vai aparecer a caixa
+          
+              let placeholder = '';
+              
+              // Decide o texto que aparece dentro da caixa
+              if (valor === 'elogio') {
+                placeholder = 'Digite seu elogio...';
+              } else if (valor === 'reclamacao') {
+                placeholder = 'Digite sua reclamação...';
+              } else if (valor === 'solicitacao') {
+                placeholder = 'Digite sua solicitação...';
+              }
+          
+              // Se alguma opção válida foi escolhida, mostrar o textarea
+              if (valor) {
+                caixa.innerHTML = `
+                  <label for="comentario">Comentário:</label><br>
+                  <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="${placeholder}"></textarea>
+                `;
+              } else {
+                caixa.innerHTML = ''; // se não escolher nada, limpa a caixa
+              }
+            }
+          </script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </footer>
 </body>
