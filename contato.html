@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/pgHome.css">
+    <link rel="stylesheet" href="style/pgbase.css">
 </head>
 
 <script>
@@ -48,10 +49,15 @@
 <body>
 
     <header>
-        <img src="assets/logo-ford-256.png" alt="">
-        <a href="home.html">Home</a>
-        <a href="lancamento.html">Lançamento</a>
-        <a href="contato.html">Contato</a>
+        <img src="assets/logo-ford-256.png" alt="Logo Ford">
+        <nav>
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="lancamento.html">Lancamento</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+        <div></div>
     </header>
 
     <main>
@@ -115,21 +121,7 @@
 
 
     </main>
-
-    <footer>
-        <div>
-            <p>Redes Sociais</p>
-            <a href=""><img src="assets/facebook-50.png" alt=""></a>
-            <a href=""><img src="assets/youtube-squared-50.png" alt=""></a>
-            <a href=""><img src="assets/instagram-logo-50.png" alt=""></a>
-        </div>
-
-        <div>
-            <img src="assets/ford-96.png" alt="">
-        </div>
-
-
-        <script>
+//script
             function mostrarComentario() {
               const select = document.getElementById('contato'); // pega o select
               const valor = select.value; // pega o valor da opção escolhida
@@ -149,30 +141,29 @@
               // Se alguma opção válida foi escolhida, mostrar o textarea
               if (valor) {
                 caixa.innerHTML = `
-                  <label for="comentario">Comentário:</label><br>
-                  <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="${placeholder}"></textarea>
+                  label for="comentario">Comentário:labelbr
+                  textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="${placeholder}">textarea
                 `;
               } else {
-                caixa.innerHTML = ''; // se não escolher nada, limpa a caixa
+                caixa.innerHTML = '';  se não escolher nada, limpa a caixa
               }
             }
-          </script>
+          script//
           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
+          <footer>
+            <div class="Siga a Ford nas redes sociais">
+                 <p>Redes sociais</p> 
+             <a href="https://facebook.com/fordbrasil"><img src="assets/facebook-50.png" alt="Facebook"></a>
+             <a href="https://instragram.com/fordbrasil"><img src="assets/instagram-logo-50.png" alt="Instragram"></a>
+             <a href="https://youtube.com/fordbrasil"><img src="assets/youtube-squared-50.png" alt="Youtube"></a>
+            </div>
+            <div class="copyright">
+            <p>&copy; 2025 Ford Motor Company</p>
+            </div>
+            <div class="Logo_footer">
+            <img src="assets/ford-96.png" alt="Logo footer">
+            </div>
+         </footer>
 </body>
 
 </html>

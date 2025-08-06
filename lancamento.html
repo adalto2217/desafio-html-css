@@ -5,28 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/pgHome.css">
+    <link rel="stylesheet" href="style/pgbase.css">
 </head>
 <body>
     
     <header>
-        <img src="assets/logo-ford-256.png" alt="">
-
-        <a href="home.html">Home</a>
-        <a href="lancamento.html">Lançamento</a>
-        <a href="contato.html">Contato</a>
+        <img src="assets/logo-ford-256.png" alt="Logo Ford">
+        <nav>
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="lancamento.html">Lancamento</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+        <div></div>
     </header>
         
     <main>
-        <iframe width="755" height="425" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section>
+            <div class="video promocional">
+            <iframe width="755" height="425" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <p>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Cumque assumenda autem nihil animi, facilis veniam impedit corrupti labore 
             temporibus tempore maxime. 
             Itaque voluptate velit id autem eveniet consequuntur ab nulla.
-        </p>
+          </p>
 
-        <div>
+        </div>
+    </section>
+
+    <table class="tabelacarros">
+        <tr><!-- fechar o tr por ultimo -->
+            <td class="veiculo card">
+                <img src="/assets/XL Cabine.jpg" alt="veiculo1" class="veiculo-imagem">
+                <div class="veiculo informaçao">
+                    <input type="checkbox" class="veiculo-checkbox">
+                    <div class="texto-container">
+                        <h5>XL Cabine simples 2.2 Diesel 4x4 MT 2022</h5>
+                        <p>Preço Sugerido: R$ 183.850</p>
+                    </div>
+                    <img src="/assets/info.png" class="info-icon">
+                </div>
+
+            </td>
+       
+            <td class="veiculo card">
+                <img src="assets/xls 2.2 diesel.jpg" alt="veiculo2" class="veiculo-imagem">
+                <div class="veiculo informaçao">
+                    <input type="checkbox" class="veiculo-checkbox">
+                    <div class="texto-container">
+                        <h5>XLS 2.2 Diesel 4x4 AT 2022</h5>
+                        <p>preço sugerido: R$ 220.690</p>
+                    </div>
+                    <img src="/assets/info.png" class="info-icon">
+                </div>
+
+            </td>
+        
+            <td class="veiculo card">
+                <img src="assets/storm.jpg" alt="veiculo3" class="veiculo-imagem">
+                <div class="veiculo informaçao">
+                    <input type="checkbox" class="veiculo-checkbox">
+                    <div class="texto-container">
+                        <h5>Storm 2.2 Diesel 4x4 MT 2022</h5>
+                        <p>Preço Sugerido: R$ 183.850</p>
+                    </div>
+                    <img src="/assets/info.png" class="info-icon">
+                </div>
+
+            </td>
+        </tr>
+
+    </table>
+    <button type="submit" class="submit-botao">
+        <span>Comparar carros</span>
+    </button>
+   
+</body>
+</html>   
+   
+   
+   
+   
+   
+   
+    <!--
             <div>
 
                 <img src="assets/XL Cabine.jpg" alt="">
@@ -52,7 +117,7 @@
                 <img src="assets/storm.jpg" alt="">
                 <input type="checkbox">
                 <img src="assets/info.png" alt="">
-                <p class="texto azul">Storm 3.2 Diesel 4x4 AT 2022</p>
+                <p class="texto azul">Storm 2.2 Diesel 4x4 MT 2022</p>
                 <p class="texto preto">Preço Sugerido: R$ 222.790</p>
             </div>
 
@@ -63,22 +128,21 @@
     </main>
 
     <footer>
-        <div>
-            <p>Redes Sociais</p>
-            <a href=""><img src="assets/facebook-50.png" alt=""></a>
-            <a href=""><img src="assets/youtube-squared-50.png" alt=""></a>
-            <a href=""><img src="assets/instagram-logo-50.png" alt=""></a>
+        <div class="Siga a Ford nas redes sociais">
+             <p>Redes sociais</p> 
+         <a href="https://facebook.com/fordbrasil"><img src="assets/facebook-50.png" alt="Facebook"></a>
+         <a href="https://instragram.com/fordbrasil"><img src="assets/instagram-logo-50.png" alt="Instragram"></a>
+         <a href="https://youtube.com/fordbrasil"><img src="assets/youtube-squared-50.png" alt="Youtube"></a>
         </div>
-
-        <div>
-            <img src="assets/ford-96.png" alt="">
+        <div class="copyright">
+        <p>&copy; 2025 Ford Motor Company</p>
         </div>
-
-    </footer>
-
+        <div class="Logo_footer">
+        <img src="assets/ford-96.png" alt="Logo footer">
+        </div>
+     </footer>
+    -->
     
 
 
 
-</body>
-</html>
