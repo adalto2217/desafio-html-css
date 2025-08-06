@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 48px;
+    padding: 10px 40px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -41,13 +41,13 @@ header nav a {
 }
 
 header nav a:hover{
-    color: #003478;
+    color: #003478
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     background-color: #1b3571;
     color: #fff;
     padding: 10px 40px;
@@ -56,14 +56,14 @@ footer{
 .redesSociais{
     display: flex;
     gap: 15px;
-} 
+}
 
 .redesSociais p{
     margin: 5px 0;
 }
 
 .redesSociais img,
-.Logo_footer img{
+.logo_footer img{
     height: 30px;
     transition: transform 0.3s ease;
 }
